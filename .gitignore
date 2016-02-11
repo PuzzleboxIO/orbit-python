@@ -1,3 +1,9 @@
+# Puzzlebox Synapse is a separate package
+/Puzzlebox/Synapse
+
+# Puzzlebox Jigsaw is a separate package
+/Puzzlebox/Jigsaw
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

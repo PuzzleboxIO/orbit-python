@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0045)http://jigsaw.puzzlebox.info/tracker/wiki/EEG -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+      EEG – Puzzlebox Jigsaw
+    </title>
+      
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://jigsaw.puzzlebox.info/tracker/search">
+        <link rel="help" href="http://jigsaw.puzzlebox.info/tracker/wiki/TracGuide">
+        <link rel="alternate" href="http://jigsaw.puzzlebox.info/tracker/wiki/EEG?format=txt" type="text/x-trac-wiki" title="Plain Text">
+        <link rel="start" href="http://jigsaw.puzzlebox.info/tracker/wiki">
+        <link rel="stylesheet" href="./plugin-eeg_files/trac.css" type="text/css"><link rel="stylesheet" href="./plugin-eeg_files/wiki.css" type="text/css">
+        <link rel="shortcut icon" href="http://jigsaw.puzzlebox.info/tracker/chrome/common/trac.ico" type="image/x-icon">
+        <link rel="icon" href="http://jigsaw.puzzlebox.info/tracker/chrome/common/trac.ico" type="image/x-icon">
+      <script type="text/javascript" charset="utf-8" src="./plugin-eeg_files/jquery.js"></script><style type="text/css"></style>
+      <script type="text/javascript" charset="utf-8" src="./plugin-eeg_files/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="./plugin-eeg_files/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="./plugin-eeg_files/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="./plugin-eeg_files/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://jigsaw.puzzlebox.info/"><img src="./plugin-eeg_files/puzzlebox_logo.jpg" alt="Puzzlebox Productions, LLC"></a>
+      </div>
+      <form id="search" action="http://jigsaw.puzzlebox.info/tracker/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://jigsaw.puzzlebox.info/tracker/login">Login</a></li><li><a href="http://jigsaw.puzzlebox.info/tracker/prefs">Preferences</a></li><li><a href="http://jigsaw.puzzlebox.info/tracker/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="http://jigsaw.puzzlebox.info/tracker/about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="last first active"><a href="http://jigsaw.puzzlebox.info/tracker/wiki">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="http://jigsaw.puzzlebox.info/tracker/wiki">wiki:</a><a class="pathentry" href="./plugin-eeg_files/plugin-eeg.html" title="View EEG">EEG</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="http://jigsaw.puzzlebox.info/tracker/wiki/WikiStart">Start Page</a></li><li><a href="http://jigsaw.puzzlebox.info/tracker/wiki/TitleIndex">Index</a></li><li class="last"><a href="http://jigsaw.puzzlebox.info/tracker/wiki/EEG?action=history">History</a></li>
+        </ul>
+        <hr>
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="EEG">EEG<a class="anchor" href="http://jigsaw.puzzlebox.info/tracker/wiki/EEG#EEG" title="Link to this section"> ¶</a></h1>
+<p>
+<a style="padding:0; border:none" href="http://jigsaw.puzzlebox.info/tracker/attachment/wiki/Attachments/screenshot-jigsaw-eeg.png"><img src="./plugin-eeg_files/screenshot-jigsaw-eeg.png"></a>
+</p>
+<p>
+The EEG component connects to supported hardware and software services, displays raw EEG brainwaves and <a class="ext-link" href="http://company.neurosky.com/files/neurosky_esense_whitepaper.pdf"><span class="icon">​</span>NeuroSky eSense</a> measurements of "Attention" and "Meditation" (mental relaxation) in real-time, and charts recordings collected over the last thirty seconds. The software also provides an emulator and complete implementation of the <a class="ext-link" href="http://developer.neurosky.com/docs/lib/exe/fetch.php?media=app_notes:thinkgear_socket_protocol.pdf"><span class="icon">​</span>ThinkGear Socket Protocol</a>, a "JSON-based protocol for the transmission and receipt of ThinkGear brainwave data between a client and a server." This allows <strong>Puzzlebox Jigsaw</strong> to either connect to NeuroSky's own ThinkGear service (if already running), or replace the need for that software entirely.
+</p>
+<h2 id="HowToUseEEGFunctions"><span class="wikianchor" id="functions">How To Use EEG Functions<a class="anchor" href="http://jigsaw.puzzlebox.info/tracker/wiki/EEG#functions" title="Link to #functions"> ¶</a></span><a class="anchor" href="http://jigsaw.puzzlebox.info/tracker/wiki/EEG#HowToUseEEGFunctions" title="Link to this section"> ¶</a></h2>
+<ul><li><strong>EEG Headset Model</strong> - Supported models include the <a class="ext-link" href="http://store.neurosky.com/products/mindwave-1"><span class="icon">​</span>NeuroSky MindWave</a> and <a class="ext-link" href="http://store.neurosky.com/products/mindset"><span class="icon">​</span>NeuroSky MindSet</a>. Future support for the <a class="ext-link" href="http://www.emotiv.com/apps/epoc/299/"><span class="icon">​</span>Emotiv EPOC</a> is currently under development.
+</li></ul><ul><li><strong>EEG Data Source</strong> - Sources for EEG data include hardware which is directly connected to the system running <strong>Puzzlebox Jigsaw</strong>, <a class="ext-link" href="http://developer.neurosky.com/docs/lib/exe/fetch.php?media=app_notes:thinkgear_socket_protocol.pdf"><span class="icon">​</span>ThinkGear Socket Protocol</a> based server running locally or on a remote host, or a ThinkGear hardware emulator
+<ul><li><strong>Hardware Device</strong> - Hardware which is connected to a local serial port
+</li><li><strong>ThinkGear Emulator</strong> - EEG hardware can be emulated by selecting this option
+</li><li><strong>Puzzlebox Synapse</strong> - A local or remote instance of <strong>Puzzlebox Synapse</strong> can be selected
+</li><li><strong>ThinkGear Connect</strong> - A local or remote instance of NeuroSky's <strong>ThinkGear Connect</strong> server can be selected
+</li></ul></li></ul><ul><li><strong>Enable Synapse Server</strong> - When a local Hardware Device or the ThinkGear Emulator is selected, it is possible to re-share the data collected by establishing an instance of the <strong>Puzzlebox Synapse</strong> to provide the <a class="ext-link" href="http://developer.neurosky.com/docs/lib/exe/fetch.php?media=app_notes:thinkgear_socket_protocol.pdf"><span class="icon">​</span>ThinkGear Socket Protocol</a> over TCP/IP to another program or remote system
+<ul><li><strong>Host</strong> - Select the IP address desired for hosting the Synapse Server instance. Default is <em>127.0.0.1</em> (also known as "localhost") which will not expose user data over the local area network or to the internet. Entering the LAN or external IP address for the system in this field will allow remote hosts to connect to the data stream (assuming the appropriate firewall and network security permissions are in place to allow this). <strong>Note:</strong> When connecting to an external <strong>Puzzlebox Synapse</strong> or <strong>ThinkGear Connect</strong> server, the IP address of that server needs to be entered here.
+</li><li><strong>Port</strong> - The default port for <strong>Puzzlebox Synapse</strong> and <strong>ThinkGear Connect</strong> is <em>13854</em>
+</li></ul></li></ul><ul><li><strong>Start</strong> / <strong>Stop</strong> / <strong>Connect</strong> / <strong>Disconnect</strong> - Begins or ends an EEG data capture session as indicated
+</li></ul><ul><li><strong>Raw EEG Waves</strong> - Brainwaves are displayed in on this chart in real-time (so long as the ThinkGear Emulator is not being used). Recordings are made at 512 Hz and displayed on both one-second and half-second intervals.
+</li></ul><ul><li><strong>Brain Signals History</strong> - <a class="ext-link" href="http://company.neurosky.com/files/neurosky_esense_whitepaper.pdf"><span class="icon">​</span>NeuroSky eSense</a> measurements of "Attention" (concentration) and "Meditation" (mental relaxation) recorded over the last 30 seconds are graphed here
+</li></ul><ul><li><strong>Concentration</strong> - This value corresponds to the <a class="ext-link" href="http://company.neurosky.com/files/neurosky_esense_whitepaper.pdf"><span class="icon">​</span>NeuroSky eSense</a> equivalent of "Attention"
+</li></ul><ul><li><strong>Relaxation</strong> - The values corresponds to the <a class="ext-link" href="http://company.neurosky.com/files/neurosky_esense_whitepaper.pdf"><span class="icon">​</span>NeuroSky eSense</a> equivalent of "Meditation"
+</li></ul><ul><li><strong>Connection Level</strong> - Indicates both the signal quality and electrical ground contact quality (at the piece which touches or clips onto the ear). Normally a Connection Level of 80% or higher is required before <a class="ext-link" href="http://company.neurosky.com/files/neurosky_esense_whitepaper.pdf"><span class="icon">​</span>NeuroSky eSense</a> can be calculated
+</li></ul><ul><li><strong> Connection Time</strong> - This timer indicates how the length of the EEG session currently in memory. Clicking the "Reset" button on the <a class="wiki" href="http://jigsaw.puzzlebox.info/tracker/wiki/Session">Session</a> component will also reset this timer
+</li></ul><ul><li><strong>Packets Received</strong> - Indicates the total number of packets received from the EEG hardware, including raw EEG signals (recorded at 512 Hz)
+</li></ul><ul><li><strong>Packets Dropped</strong> - Indicates the total number of packets which were recorded by the EEG hardware but did not reach the system due to RF interference
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://jigsaw.puzzlebox.info/tracker/wiki/EEG?action=diff&version=15" title="Version 15 by sc">Last modified</a> <a class="timeline" href="http://jigsaw.puzzlebox.info/tracker/timeline?from=2013-05-04T10%3A12%3A41-06%3A00&precision=second" title="See timeline at 05/04/13 10:12:41">10 months ago</a></span>
+            <span class="trac-print">Last modified on 05/04/13 10:12:41</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://jigsaw.puzzlebox.info/tracker/wiki/EEG?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr>
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="./plugin-eeg_files/trac_logo_mini.png" height="30" width="107" alt="Trac Powered"></a>
+      <p class="left">Powered by <a href="http://jigsaw.puzzlebox.info/tracker/about"><strong>Trac 1.0</strong></a><br>
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Puzzlebox Jigsaw Tracker - Puzzlebox Productions, LLC</p>
+    </div>
+  
+</body></html>
