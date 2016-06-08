@@ -97,7 +97,7 @@ EXPORT_CSV_RAW_DATA = False
 # Orbit Plug-in Configuration
 #####################################################################
 
-DEFAULT_ORBIT_AUDIO_FILE = 'throttle_hover_os_x.wav'
+DEFAULT_ORBIT_AUDIO_FILE = 'throttle_hover_common.wav'
 
 #DEFAULT_ORBIT_AUDIO_FRAMEWORK = 'Phonon'
 DEFAULT_ORBIT_AUDIO_FRAMEWORK = 'QSound'
