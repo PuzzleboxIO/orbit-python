@@ -6,7 +6,7 @@
 # Copyright Puzzlebox Productions, LLC (2011-2016)
 
 __changelog__ = """\
-Last Update: 2016.01.26
+Last Update: 2016.06.08
 """
 
 import os, sys
