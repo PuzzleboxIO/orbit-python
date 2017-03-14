@@ -68,7 +68,7 @@ $ git clone https://github.com/PuzzleboxIO/synapse-python
 
 $ git clone https://github.com/PuzzleboxIO/jigsaw-python
 
-$ git clone https://github.com/PuzzleboxIO/Orbit-python
+$ git clone https://github.com/PuzzleboxIO/orbit-python
 
 $ cd jigsaw-python/Puzzlebox
 
