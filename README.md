@@ -1,4 +1,4 @@
-orbit-python
+# orbit-python
 ==================
 
 
@@ -70,7 +70,7 @@ $ git clone https://github.com/PuzzleboxIO/jigsaw-python
 
 $ git clone https://github.com/PuzzleboxIO/orbit-python
 
-$ cd jigsaw-python/Puzzlebox
+$ cd orbit-python/Puzzlebox
 
 $ ln -s ../../synapse-python/Puzzlebox/Synapse Synapse
 
