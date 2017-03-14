@@ -9,7 +9,7 @@ Copyright (2012-2017)
 
 by Puzzlebox Productions, LLC
 
-https://puzzlebox.io
+https://puzzlebox.io/orbit
 
 
 License: GNU Affero General Public License v3.0
@@ -49,11 +49,7 @@ https://github.com/PuzzleboxIO/synapse-python
 
 https://github.com/PuzzleboxIO/jigsaw-python
 
-- Create a symlink inside root directory to Synapse and Jigsaw:
-
-Example: ln -s ../../synapse-python/Puzzlebox/Synapse Synapse
-
-Example: ln -s ../../jigsaw-python/Puzzlebox/Jigsaw Jigsaw
+- Create symlinks inside root directory to Synapse and Jigsaw:
 
 
 ============
